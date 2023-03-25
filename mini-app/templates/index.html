@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input dados</title>
+</head>
+
+<body>
+    <h1>Dados da reserva</h1>
+    <form action="/process_form" method="post">
+        <label for="adult_number">Número de adultos:</label>
+        <input type="number" id="adult_number" name="adult_number" placeholder="Ex: 3"><br>
+
+        <label for="child_number">Número de crianças:</label>
+        <input type="number" id="child_number" name="child_number" placeholder="Ex: 2"><br>
+
+        <label for="weekend_nights">Número de noites no fim de semana:</label>
+        <input type="number" id="weekend_nights" name="weekend_nights" placeholder="Ex: 4"><br>
+
+        <label for="weekday_nights">Número de noites na semana:</label>
+        <input type="number" id="weekday_nights" name="weekday_nights" placeholder="Ex: 3"><br>
+
+        <label for="parking_space">Vaga de estacionamento requerida?</label>
+        <input type="radio" id="yes_parking" name="parking_space" value="1">
+        <label for="yes_parking">Sim</label>
+        <input type="radio" id="no_parking" name="parking_space" value="0">
+        <label for="no_parking">Não</label><br>
+
+        <label for="waiting_time">Tempo de espera:</label>
+        <input type="number" id="waiting_time" name="waiting_time" placeholder="Ex: 2"><br>
+
+        <label for="repeated_booking">Reserva repetida?</label>
+        <input type="radio" id="yes_repeated" name="repeated_booking" value="1">
+        <label for="yes_repeated">Sim</label>
+        <input type="radio" id="no_repeated" name="repeated_booking" value="0">
+        <label for="no_repeated">Não</label><br>
+
+        <label for="canceled_bookings">Número de reservas canceladas anteriormente:</label>
+        <input type="number" id="canceled_bookings" name="canceled_bookings" placeholder="Ex: 4"><br>
+
+        <label for="not_canceled_bookings">Número de reservas não canceladas anteriormente:</label>
+        <input type="number" id="not_canceled_bookings" name="not_canceled_bookings" placeholder="Ex: 5"><br>
+
+        <label for="special_requests">Número de pedidos especiais:</label>
+        <input type="number" id="special_requests" name="special_requests" placeholder="Ex: 4"><br>
+
+        <label for="meal-plan">Plano de refeições:</label>
+        <br>
+        <input type="radio" id="meal-plan-1" name="meal-plan" value="Meal Plan 1">
+        <label for="meal-plan-1">Meal Plan 1</label>
+        <br>
+        <input type="radio" id="meal-plan-2" name="meal-plan" value="Meal Plan 2">
+        <label for="meal-plan-2">Meal Plan 2</label>
+        <br>
+        <input type="radio" id="meal-plan-3" name="meal-plan" value="Meal Plan 3">
+        <label for="meal-plan-3">Meal Plan 3</label>
+        <br>
+        <input type="radio" id="not-selected" name="meal-plan" value="Not Selected">
+        <label for="not-selected">Not Selected</label>
+        <br><br>
+
+
+        <label for="room_type_reserved">Tipo de quarto reservado:</label><br>
+        <input type="radio" id="room_type_1" name="room_type_reserved" value="Room_Type_1">
+        <label for="room_type_1">Quarto 1</label><br>
+        <input type="radio" id="room_type_2" name="room_type_reserved" value="Room_Type_2">
+        <label for="room_type_2">Quarto 2</label><br>
+        <input type="radio" id="room_type_3" name="room_type_reserved" value="Room_Type_3">
+        <label for="room_type_3">Quarto 3</label><br>
+        <input type="radio" id="room_type_4" name="room_type_reserved" value="Room_Type_4">
+        <label for="room_type_4">Quarto 4</label><br>
+        <input type="radio" id="room_type_5" name="room_type_reserved" value="Room_Type_5">
+        <label for="room_type_5">Quarto 5</label><br>
+        <input type="radio" id="room_type_6" name="room_type_reserved" value="Room_Type_6">
+        <label for="room_type_6">Quarto 6</label><br>
+        <input type="radio" id="room_type_7" name="room_type_reserved" value="Room_Type_7">
+        <label for="room_type_7">Quarto 7</label><br><br>
+
+        <label for="market_segment_type">Tipo de segmento de mercado:</label><br>
+        <input type="radio" id="aviation" name="market_segment_type" value="Aviation">
+        <label for="aviation">Aviação</label><br>
+        <input type="radio" id="complementary" name="market_segment_type" value="Complementary">
+        <label for="complementary">Complementar</label><br>
+        <input type="radio" id="corporate" name="market_segment_type" value="Corporate">
+        <label for="corporate">Corporativo</label><br>
+        <input type="radio" id="online" name="market_segment_type" value="Online">
+        <label for="online">Online</label><br>
+        <input type="radio" id="ofnline" name="market_segment_type" value="Ofline">
+        <label for="ofline">Ofline</label><br>
+
+        <label for="booking-status">Status da reserva:</label>
+        <br>
+        <input type="radio" id="canceled" name="booking-status" value="Canceled">
+        <label for="canceled">Canceled</label>
+        <br>
+        <input type="radio" id="not-canceled" name="booking-status" value="Not Canceled">
+        <label for="not-canceled">Not Canceled</label>
+        <br><br>
+        <label for="arrival-year">Ano de chegada:</label>
+        <br>
+        <input type="number" id="arrival-year" name="arrival-year" placeholder="2017 ou 2018">
+        <br><br>
+        <label for="arrival-month">Mês de chegada:</label>
+        <br>
+        <input type="number" id="arrival-month" name="arrival-month" placeholder="1 a 12">
+        <br><br>
+        <label for="arrival-date">Data de chegada:</label>
+        <br>
+        <input type="number" id="arrival-date" name="arrival-date" placeholder="1 a 31">
+        <br><br>
+        <input type="submit" value="Enviar">
+    </form>
+
+
+
+
+
+
+
+
+    </form>
+
+</body>
+
+</html>
